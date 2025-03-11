@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "palegardenupgrade",
+	"version": "${version}",
+	"name": "Pale Garden Upgrade",
+	"description": "Pale garden is boring? Dont cry, this is will fix it! You dumb piece of shit...",
+	"authors": [
+		"wolfifurr"
+	],
+	"contact": {
+		"homepage": "",
+		"sources": ""
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/palegardenupgrade/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"wolfifurr.palegardenupgrade.PaleGardenUpgrade"
+		],
+		"client": [
+			"wolfifurr.palegardenupgrade.PaleGardenUpgradeClient"
+		]
+	},
+	"mixins": [
+		"palegardenupgrade.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
