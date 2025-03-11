@@ -22,7 +22,7 @@ public class ModEntitySpawns {
         BiomeModifications.addSpawn (BiomeSelectors.includeByKey (BiomeKeys.PALE_GARDEN), SpawnGroup.CREATURE,
                 ModEntities.WHITE_FIREFLY_ENTITY,100,5,10);
         SpawnRestriction.register (ModEntities.WHITE_FIREFLY_ENTITY, SpawnLocationTypes.ON_GROUND,
-                Heightmap.Type.MOTION_BLOCKING, (type, world, spawnReason, pos, random) -> world.getBlockState (pos.down ()).getBlock ()==Blocks.WATER);
+                Heightmap.Type.MOTION_BLOCKING, (type, world, spawnReason, pos, random) -> validateBlock(world,pos));
         BiomeModifications.addSpawn (BiomeSelectors.includeByKey (BiomeKeys.PALE_GARDEN), SpawnGroup.CREATURE,
                 ModEntities.MOSSY_LIZARD_ENTITY,100,2,5);
         SpawnRestriction.register (ModEntities.MOSSY_LIZARD_ENTITY, SpawnLocationTypes.ON_GROUND,
